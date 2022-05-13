@@ -8,14 +8,16 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
-
     - name: Install dependencies
-      run: apt install cmake doxygen build-essential
-
+      run: sudo apt update && sudo apt install -y git cmake doxygen build-essential
+    - name: Update modules
+      run: git submodule update --init --recursive
     - name: Generate Documentation
       run: make
+    - uses: actions/upload-artifact@v3
+      with:
+        name: com.chinmaygarde.webgpunative.docset.tar.gz
+        path: build/com.chinmaygarde.webgpunative.docset.tar.gz
