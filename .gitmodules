@@ -1,0 +1,6 @@
+[submodule "webgpu-headers"]
+	path = webgpu-headers
+	url = https://github.com/webgpu-native/webgpu-headers.git
+[submodule "doxygen2docset"]
+	path = doxygen2docset
+	url = https://github.com/chinmaygarde/doxygen2docset.git
