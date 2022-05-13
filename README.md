@@ -7,8 +7,8 @@ To build the documentation for the WebGPU Native interface checkout out at [`web
 
 ![WebGPU Native Docset](/images/preview.png)
 
-##Pre-requisites
-----------------
+Pre-requisites
+--------------
 
 * `git submodule update --init --recursive`
 * Install `doxygen`
