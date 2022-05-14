@@ -13,4 +13,5 @@ Pre-requisites
 * `git submodule update --init --recursive`
 * Install `doxygen`
 * Install `cmake`
+* Install `graphviz`
 * Install native C/C++ toolchain on host to compile `doxygen2docset`.
