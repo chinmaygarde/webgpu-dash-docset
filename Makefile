@@ -10,7 +10,8 @@ upload: build
 	gsutil cp WebGPUNative.xml gs://public.chinmaygarde.com/webgpunative/
 
 sync:
-	cd webgpu-headers && git pull --rebase origin
+	git submodule update --init --recursive
+	cd webgpu-headers && git checkout main && git pull --rebase origin main
 
 clean:
 	rm -rf docs
